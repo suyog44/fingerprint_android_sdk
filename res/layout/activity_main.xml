@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:text="ID" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Baudrate" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <EditText
+                android:id="@+id/et_ID"
+                android:layout_width="46dp"
+                android:layout_height="match_parent"
+                android:ems="2"
+                android:inputType="number"
+                android:numeric="integer"
+                android:text="0" >
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <Spinner
+                android:id="@+id/bt_spinner1"
+                android:layout_width="90dp"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_baudrate"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="SetBaudrate" />
+
+        <Button
+            android:id="@+id/bt_DeviceInfo"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="DeviceInfo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/bt_GetEnrollCount"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="GetEnrollCount" />
+        <Button 
+            android:id="@+id/bt_CheckEnrolled" 
+            style="?android:attr/buttonStyleSmall" 
+            android:layout_width="135dp" 
+            android:layout_height="wrap_content" 
+            android:text="CheckEnrolled"/>
+
+        <Button
+            android:id="@+id/bt_DeletAll"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="DeletAll" />
+
+        <Button
+            android:id="@+id/bt_DeletID"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="DeletID" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/bt_VerifyTemplate"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="VerifyTemplate" />
+
+        <Button
+            android:id="@+id/bt_IdentifyTemplate"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="IdentifyTemplate" />
+
+        <Button
+            android:id="@+id/bt_SetTemplate"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="SetTemplate" />
+
+        <Button
+            android:id="@+id/bt_GetTemplate"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="GetTemplate" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/bt_GetImage"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="GetImage" />
+
+        <Button
+            android:id="@+id/bt_GetRaw"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="GetRaw" />
+
+        <Button
+            android:id="@+id/bt_Verify"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="Identify" />
+
+        <Button
+            android:id="@+id/bt_Encoll"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="Enroll" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_Finger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffffff"
+        android:src="@drawable/ic_launcher" />
+
+</LinearLayout>
